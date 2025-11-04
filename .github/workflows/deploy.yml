@@ -28,6 +28,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Dump npm debug log on failure
+        if: failure()
+        run: |
+          echo "=== NPM debug log (if any) ==="
+          ls -la /home/runner/.npm/_logs || true
+          cat /home/runner/.npm/_logs/*.log || true
+
       - name: Build
         run: npm run build
 
