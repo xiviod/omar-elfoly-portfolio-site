@@ -69,8 +69,8 @@ export default function Portfolio() {
               I’m Omar Elfoly — Mechatronics & AI Engineer passionate about designing production-ready AI systems that merge intelligence, precision, and creativity.
             </p>
             <div className="flex gap-4">
-              <a href="#projects" onClick={() => scrollToSection('projects')} className="bg-[#0071FF] text-black px-6 py-3 font-medium hover:bg-[#0095FF] transition">View Projects</a>
-              <a href="/Omar-Elfoly-AI-Engineer-Resume.pdf" download className="border border-[#0071FF] px-6 py-3 font-medium text-[#0071FF] hover:bg-[#0071FF] hover:text-black transition">Download CV</a>
+              <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }} className="bg-[#0071FF] text-black px-6 py-3 font-medium hover:bg-[#0095FF] transition">View Projects</a>
+              <a href={`${import.meta.env.BASE_URL}Omar-Elfoly-AI-Engineer-Resume.pdf`} download className="border border-[#0071FF] px-6 py-3 font-medium text-[#0071FF] hover:bg-[#0071FF] hover:text-black transition">Download CV</a>
             </div>
           </div>
 
