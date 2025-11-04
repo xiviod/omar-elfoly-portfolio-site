@@ -52,7 +52,7 @@ export default function Portfolio() {
             <li onClick={() => scrollToSection('about')} className="cursor-pointer hover:text-[#0071FF] transition-colors">About</li>
             <li onClick={() => scrollToSection('contact')} className="cursor-pointer hover:text-[#0071FF] transition-colors">Contact</li>
           </ul>
-          <button onClick={() => scrollToSection('contact')} className="border border-[#0071FF] text-[#0071FF] px-5 py-2 text-sm tracking-wide hover:bg-[#0071FF] hover:text:black transition-colors">
+          <button onClick={() => scrollToSection('contact')} className="border border-[#0071FF] text-[#0071FF] px-5 py-2 text-sm tracking-wide hover:bg-[#0071FF] hover:text-black transition-colors">
             Contact
           </button>
         </div>
